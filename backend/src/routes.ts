@@ -3,7 +3,6 @@ import fs from 'fs';
 
 const router = express.Router();
 
-// Ruta para obtener los servicios
 router.get('/services', (req: Request, res: Response) => {
   fs.readFile('services.txt', 'utf8', (err, data) => {
     if (err) {
@@ -15,7 +14,6 @@ router.get('/services', (req: Request, res: Response) => {
   });
 });
 
-// Ruta para obtener los horarios disponibles para un servicio
 router.get('/slots', (req: Request, res: Response) => {
   fs.readFile('slots.txt', 'utf8', (err, data) => {
     if (err) {

@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Service from './steps/Service';
+import Schedule from './steps/Schedule';
+import Confirm from './steps/Confirm';
+import { LinearProgress } from '@mui/material';
+import Footer from './Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
+function ProgressBar() {
+  const location = useLocation();
+  const steps = ['/service', '/schedule', '/confirm']; // Define your step paths
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  // Calculate current step index
+  const currentStepIndex = steps.indexOf(location.pathname);
+
+  // Calculate progress percentage
+  const progress = (currentStepIndex + 1) / steps.length * 100;
+
+  return <LinearProgress color='success' variant="determinate" value={progress} sx={{height:'12px'}} />;
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <div className='mxxs:max-w-xs mx-auto mt-3'>
+        <p className='text-left text-lg font-bold'>Seleccionar servicio</p>
+        <ProgressBar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Service />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/confirm" element={<Confirm />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
