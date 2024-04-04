@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center space-x-5 fixed w-full h-16 bg-transparent rounded-t-sm bottom-0">
+    <div className="flex items-center justify-center space-x-5 fixed w-full h-20 bg-transparent rounded-t-sm bottom-0">
       <a className={`flex flex-col items-center justify-center ${selectedOption === 'reserve' ? 'selected' : ''}`} onClick={() => handleOptionClick('reserve')}>
         <CoffeeIcon sx={{ fontSize: 30 }} className={selectedOption === 'reserve' ? 'text-violet-800' : 'text-gray-700'} />
         <p className={selectedOption === 'reserve' ? 'text-violet-800 font-bold' : 'text-gray-700 font-bold'}>Reservar</p>

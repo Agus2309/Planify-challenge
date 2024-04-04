@@ -7,29 +7,29 @@ import Footer from './Footer';
 
 function ProgressBar() {
   const location = useLocation();
-  const steps = ['/service', '/schedule', '/confirm']; // Define your step paths
+  const steps = ['/service', '/schedule', '/confirm'];
 
-  // Calculate current step index
   const currentStepIndex = steps.indexOf(location.pathname);
 
-  // Calculate progress percentage
   const progress = (currentStepIndex + 1) / steps.length * 100;
 
-  return <LinearProgress color='success' variant="determinate" value={progress} sx={{height:'12px'}} />;
+  return <LinearProgress color='success' variant="determinate" value={progress + 20} sx={{height:'15px'}} />;
 }
 
 function App() {
   return (
     <Router>
-      <div className='mxxs:max-w-xs mx-auto mt-3'>
-        <p className='text-left text-lg font-bold'>Seleccionar servicio</p>
-        <ProgressBar />
+      <div className='min-h-screen mb-24'> {/** revisar mas tarde */}
+        <div className='mxxs:max-w-xs mx-auto mt-3'>
+          <p className='text-left text-lg font-bold'>Seleccionar servicio</p>
+          <ProgressBar />
+        </div>
+        <Routes>
+          <Route path="/" element={<Service />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/confirm" element={<Confirm />} />
+        </Routes>
       </div>
-      <Routes>
-        <Route path="/" element={<Service />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/confirm" element={<Confirm />} />
-      </Routes>
       <Footer />
     </Router>
   );
