@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Card, CardContent, Button } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import { Link } from 'react-router-dom';
 
 interface Service {
   id: number;
@@ -78,6 +79,7 @@ const Service: React.FC = () => {
                       <CardContent>
                         <p className='text-lg font-medium'>{service.name}</p>
                         <p>{service.description}</p>
+                        
                         <Button
                           variant='contained'
                           size='small'
@@ -96,9 +98,11 @@ const Service: React.FC = () => {
         </Card>
         {selectedService && (
             <div>
-                <Button variant='contained' size='large' sx={{ float: 'right', marginTop: '10px', backgroundColor: 'gray' }}>
-                    Siguiente
-                </Button>
+                <Link to={'/schedule'}>
+                    <Button variant='contained' size='large' sx={{ float: 'right', marginTop: '10px', backgroundColor: 'gray' }}>
+                        Siguiente
+                    </Button>
+                </Link>
             </div>
             )}
       </div>

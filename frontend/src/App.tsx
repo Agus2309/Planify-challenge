@@ -11,9 +11,9 @@ function ProgressBar() {
 
   const currentStepIndex = steps.indexOf(location.pathname);
 
-  const progress = (currentStepIndex + 1) / steps.length * 100;
+  const progress = (currentStepIndex + 1) / steps.length * 70;
 
-  return <LinearProgress color='success' variant="determinate" value={progress + 20} sx={{height:'15px'}} />;
+  return <LinearProgress color='success' variant="determinate" value={progress + 10} sx={{height:'15px'}} />;
 }
 
 function App() {
