@@ -1,0 +1,41 @@
+[
+  {
+    "id": "291692240",
+    "selectedService": {
+      "id": 5,
+      "name": "Deep Tissue Massage",
+      "description": "Intense massage to alleviate muscle tension.",
+      "category": "Massage and Spa"
+    },
+    "selectedSlot": {
+      "date": "27 de abril de 2024",
+      "timeSlot": "09:30"
+    }
+  },
+  {
+    "id": "724782240",
+    "selectedService": {
+      "id": 5,
+      "name": "Deep Tissue Massage",
+      "description": "Intense massage to alleviate muscle tension.",
+      "category": "Massage and Spa"
+    },
+    "selectedSlot": {
+      "date": "24 de abril de 2024",
+      "timeSlot": "09:00"
+    }
+  },
+  {
+    "id": "356064788",
+    "selectedService": {
+      "id": 9,
+      "name": "Professional Makeup",
+      "description": "Makeup services for special events.",
+      "category": "Makeup"
+    },
+    "selectedSlot": {
+      "date": "27 de abril de 2024",
+      "timeSlot": "09:30"
+    }
+  }
+]

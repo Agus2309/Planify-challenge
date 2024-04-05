@@ -4,6 +4,10 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Link } from 'react-router-dom';
 
+interface ServiceProps {
+  onSelectService: (service: any) => void;
+}
+
 interface Service {
   id: number;
   name: string;
@@ -16,7 +20,7 @@ interface CategoryGroup {
   services: Service[];
 }
 
-const Service: React.FC = () => {
+const Service: React.FC<ServiceProps> = ({ onSelectService }) => {
   const [categories, setCategories] = useState<CategoryGroup[]>([]);
   const [expanded, setExpanded] = useState<string>('');
   const [selectedService, setSelectedService] = useState<Service | null>(null);
@@ -54,7 +58,9 @@ const Service: React.FC = () => {
 
   const handleServiceSelect = (service: Service) => {
     setSelectedService(service);
-  };
+    onSelectService(service);
+    localStorage.setItem('selectedService', JSON.stringify(service));
+};
 
   return (
     <section className="mt-5">
@@ -79,7 +85,6 @@ const Service: React.FC = () => {
                       <CardContent>
                         <p className='text-lg font-medium'>{service.name}</p>
                         <p>{service.description}</p>
-                        
                         <Button
                           variant='contained'
                           size='small'
@@ -96,16 +101,18 @@ const Service: React.FC = () => {
             ))}
           </CardContent>
         </Card>
-        {selectedService && (
-            <div>
-                <Link to={'/schedule'}>
-                    <Button variant='contained' size='large' sx={{ float: 'right', marginTop: '10px', backgroundColor: 'gray' }}>
-                        Siguiente
-                    </Button>
-                </Link>
-            </div>
-            )}
       </div>
+      {selectedService && (
+        <div className='mt-20 w-full bottom-0'>
+          <Card className='border border-gray-400' sx={{borderRadius: '0px'}}>
+            <CardContent className='flex justify-end'>
+              <Link to={'/schedule'}>
+                <Button variant='contained' className='bg-gray-700' sx={{backgroundColor: 'rgb(55 65 81)', borderRadius: '0%'}}>Siguiente</Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
+      )}
     </section>
   );
 };
