@@ -24,13 +24,13 @@ const Appointments: React.FC = () => {
 
     return (
         <div>
-            <h2>Turnos:</h2>
+            <p className='text-center text-3xl font-bold'>Mis Turnos:</p>
                 {appointments.map(appointment => (
-                    <Card key={appointment.id}>
+                    <Card className="max-w-xs mx-auto border border-gray-400 mt-4" sx={{borderRadius: '0px'}} key={appointment.id}>
                         <CardContent>
-                            <p>Fecha: {appointment.selectedSlot.date}</p>
-                            <p>Hora: {appointment.selectedSlot.timeSlot}</p>
-                            <p>Servicio: {appointment.selectedService.name}</p>
+                            <p className='text-lg'><strong>Fecha:</strong> {appointment.selectedSlot.date}</p>
+                            <p className='text-lg'><strong>Hora:</strong> {appointment.selectedSlot.timeSlot}</p>
+                            <p className='text-lg'><strong>Servicio:</strong> {appointment.selectedService.name}</p>
                         </CardContent> 
                     </Card>
                 ))}
