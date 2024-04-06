@@ -1,16 +1,16 @@
 import { Button, Card, CardContent, LinearProgress } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { API_URL } from "../App";
 
 const Confirm: React.FC = () => {
     const selectedService = JSON.parse(localStorage.getItem('selectedService') || '{}');
     const selectedSlot = JSON.parse(localStorage.getItem('selectedSlot') || '{}')
 
+    const navigate = useNavigate()
+
     const handleConfirmation = async () => {
         console.log('Selected Service:', selectedService)
         console.log('Selected Slot:', selectedSlot)
-
-        
 
         try {
             const response = await fetch(`${API_URL}/turnos`, {
@@ -28,8 +28,8 @@ const Confirm: React.FC = () => {
             throw new Error('Error al confirmar el turno')
             }
             
-            return <Link to='/success' />
-
+            navigate('/success')
+            
         } catch (error) {
             console.error('Error al confirmar el turno:', error)
         }
