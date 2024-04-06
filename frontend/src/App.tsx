@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Appointments from './steps/Appointments';
 import Success from './steps/Success';
 
-export const API_URL = 'http://localhost:3000';
+export const API_URL = 'https://planify-challenge.onrender.com';
 
 function App() {
   const [, setSelectedService] = useState<any | null>(null);
