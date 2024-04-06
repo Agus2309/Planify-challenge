@@ -193,5 +193,18 @@
       "date": "27 de abril de 2024",
       "timeSlot": "10:00"
     }
+  },
+  {
+    "id": "968484485",
+    "selectedService": {
+      "id": 1,
+      "name": "Classic Manicure",
+      "description": "Includes filing, moisturizing, and permanent polish application.",
+      "category": "Hands and Feet"
+    },
+    "selectedSlot": {
+      "date": "27 de abril de 2024",
+      "timeSlot": "09:00"
+    }
   }
 ]
