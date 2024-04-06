@@ -28,7 +28,8 @@ const Confirm: React.FC = () => {
             throw new Error('Error al confirmar el turno')
             }
             
-            window.location.href = '/success'
+            return <Link to='/success' />
+
         } catch (error) {
             console.error('Error al confirmar el turno:', error)
         }
