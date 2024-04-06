@@ -74,14 +74,40 @@ router.post('/turnos', (req: Request, res: Response) => {
   }
 });
 
-router.delete('/turnos', (req: Request, res: Response) => {
-  fs.writeFile('turnos.txt', '', (err) => {
+router.delete('/turnos/:id', (req, res) => {
+  const appointmentId = req.params.id
+
+  fs.readFile('turnos.json', 'utf8', (err, data) => {
     if (err) {
-      console.error(err);
-      return res.status(500).send('Error interno del servidor al borrar los turnos');
+      console.error(err)
+      return res
+        .status(500)
+        .send('Error interno del servidor al leer los turnos')
     }
-    res.json({ message: 'Todos los turnos han sido eliminados correctamente' });
-  });
-});
+
+    try {
+      let appointments = JSON.parse(data)
+
+      const updatedAppointments = appointments.filter(
+        (appointment: any) => appointment.id !== appointmentId
+      )
+
+      fs.writeFile('turnos.json', JSON.stringify(updatedAppointments), err => {
+        if (err) {
+          console.error(err)
+          return res
+            .status(500)
+            .send('Error interno del servidor al borrar el turno')
+        }
+        res.json({ message: 'El turno ha sido eliminado correctamente' })
+      })
+    } catch (error) {
+      console.error('Error al procesar los datos:', error)
+      res.status(500).send('Error interno del servidor al procesar los datos')
+    }
+  })
+})
+
+
 
 export default router;

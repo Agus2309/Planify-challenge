@@ -1,31 +1,85 @@
-import React, { useState } from 'react';
-import CoffeeIcon from '@mui/icons-material/Coffee';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import CoffeeIcon from '@mui/icons-material/Coffee'
+import { Link, useLocation } from 'react-router-dom'
 
 const Footer: React.FC = () => {
-  const [selectedOption, setSelectedOption] = useState('');
+  const location = useLocation()
+  const [selectedOption, setSelectedOption] = useState('')
 
   const handleOptionClick = (option: string) => {
-    setSelectedOption(option);
-  };
+    setSelectedOption(option)
+  }
 
   return (
-    <>
-    <div className="flex items-center justify-center space-x-5 fixed w-full h-20 bg-transparent rounded-t-sm bottom-0">
-      <Link to={'/'} className={`flex flex-col items-center justify-center ${selectedOption === 'reserve' ? 'selected' : ''}`} onClick={() => handleOptionClick('reserve')}>
-          <CoffeeIcon sx={{ fontSize: 30 }} className={selectedOption === 'reserve' ? 'text-violet-800' : 'text-gray-700'} />
-          <p className={selectedOption === 'reserve' ? 'text-violet-800 font-bold' : 'text-gray-700 font-bold'}>Reservar</p>
-          {selectedOption === 'reserve' && <div className="line" />}
+    <div className='flex items-center justify-center space-x-5 fixed w-full h-20 bg-transparent rounded-t-sm bottom-0'>
+      <Link
+        to={'/'}
+        className={`flex flex-col items-center justify-center ${
+          location.pathname === '/' ||
+          location.pathname === '/schedule' ||
+          location.pathname === '/confirm' ||
+          location.pathname === '/success'
+            ? 'selected'
+            : ''
+        }`}
+        onClick={() => handleOptionClick('reserve')}
+      >
+        <CoffeeIcon
+          sx={{ fontSize: 30 }}
+          className={
+            location.pathname === '/' ||
+            location.pathname === '/schedule' ||
+            location.pathname === '/confirm' ||
+            location.pathname === '/success'
+              ? 'text-violet-800'
+              : 'text-gray-700'
+          }
+        />
+        <p
+          className={
+            location.pathname === '/' ||
+            location.pathname === '/schedule' ||
+            location.pathname === '/confirm' ||
+            location.pathname === '/success'
+              ? 'text-violet-800 font-bold'
+              : 'text-gray-700 font-bold'
+          }
+        >
+          Reservar
+        </p>
+        {(location.pathname === '/' ||
+          location.pathname === '/schedule' ||
+          location.pathname === '/confirm' ||
+          location.pathname === '/success') && <div className='line' />}
       </Link>
-      <Link to={'/appointments'} className={`flex flex-col items-center justify-center ${selectedOption === 'myTurns' ? 'selected' : ''}`} onClick={() => handleOptionClick('myTurns')}>
-          <CoffeeIcon sx={{ fontSize: 30 }} className={selectedOption === 'myTurns' ? 'text-violet-800' : 'text-gray-700'} />
-          <p className={selectedOption === 'myTurns' ? 'text-violet-800 font-bold' : 'text-gray-700 font-bold'}>Mis turnos</p>
-          {selectedOption === 'myTurns' && <div className="line" />}
+      <Link
+        to={'/appointments'}
+        className={`flex flex-col items-center justify-center ${
+          location.pathname === '/appointments' ? 'selected' : ''
+        }`}
+        onClick={() => handleOptionClick('myTurns')}
+      >
+        <CoffeeIcon
+          sx={{ fontSize: 30 }}
+          className={
+            location.pathname === '/appointments'
+              ? 'text-violet-800'
+              : 'text-gray-700'
+          }
+        />
+        <p
+          className={
+            location.pathname === '/appointments'
+              ? 'text-violet-800 font-bold'
+              : 'text-gray-700 font-bold'
+          }
+        >
+          Mis turnos
+        </p>
+        {location.pathname === '/appointments' && <div className='line' />}
       </Link>
-      </div>
-    </>
-  );
-  
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer
