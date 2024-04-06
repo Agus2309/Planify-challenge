@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Footer: React.FC = () => {
   const location = useLocation()
-  const [selectedOption, setSelectedOption] = useState('')
+  const [, setSelectedOption] = useState('')
 
   const handleOptionClick = (option: string) => {
     setSelectedOption(option)

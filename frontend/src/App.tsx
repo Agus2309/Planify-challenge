@@ -10,23 +10,20 @@ import Success from './steps/Success';
 export const API_URL = 'http://localhost:3000';
 
 function App() {
-  const [selectedService, setSelectedService] = useState<any | null>(null);
-  const [selectedSlot, setSelectedSlot] = useState<any | null>(null);
+  const [, setSelectedService] = useState<any | null>(null);
 
   const handleServiceSelect = (service: any) => {
     setSelectedService(service);
   };
 
-  const handleSlotSelect = (slot: any) => {
-    setSelectedSlot(slot);
-  };
+  
 
   return (
     <Router>
         <Routes>
           <Route path="/" element={<Service onSelectService={handleServiceSelect} />} />
-          <Route path="/schedule" element={<Schedule selectedService={selectedService} onSelectSlot={handleSlotSelect} />} />
-          <Route path="/confirm" element={<Confirm selectedService={selectedService} selectedSlot={selectedSlot} />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/confirm" element={<Confirm />} />
           <Route path="/success" element={<Success />} />
           <Route path="/appointments" element={<Appointments />} />
         </Routes>
