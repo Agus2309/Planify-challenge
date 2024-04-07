@@ -67,7 +67,7 @@ const Service: React.FC<ServiceProps> = ({ onSelectService }) => {
   return (
     <>
     <div className='mb-24'>
-      <div className='mxxs:max-w-xs mx-auto mt-3'>
+      <div className='mxxs:max-w-xs xxxs:max-w-80 mx-auto mt-3'>
           <p className='text-left text-lg font-bold'>Seleccionar Servicio</p>
           <LinearProgress
           color='success'

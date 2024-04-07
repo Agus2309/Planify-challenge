@@ -69,7 +69,7 @@ const Schedule: React.FC = () => {
   return (
     <>
       <div className='min-h-screen mb-20'>
-        <div className='mxxs:max-w-xs mx-auto mt-3'>
+        <div className='mxxs:max-w-xs xxxs:max-w-80 mx-auto mt-3'>
           <p className='text-left text-lg font-bold'>Seleccionar Horario</p>
           <LinearProgress
             color='success'

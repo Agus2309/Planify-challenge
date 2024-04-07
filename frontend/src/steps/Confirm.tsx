@@ -41,7 +41,7 @@ const Confirm: React.FC = () => {
 
     return(
         <>
-            <div className="mxxs:max-w-xs mx-auto mt-3">
+            <div className="mxxs:max-w-xs xxxs:max-w-80 mx-auto mt-3">
                 <p className="text-left text-lg font-bold">Confirmar turno</p>
                 <LinearProgress
                 color="success"
