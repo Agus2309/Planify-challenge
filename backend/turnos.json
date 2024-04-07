@@ -1,210 +1,223 @@
 [
-  {
-    "id": "356064788",
-    "selectedService": {
-      "id": 9,
-      "name": "Professional Makeup",
-      "description": "Makeup services for special events.",
-      "category": "Makeup"
+    {
+        "id": "356064788",
+        "selectedService": {
+            "id": 9,
+            "name": "Professional Makeup",
+            "description": "Makeup services for special events.",
+            "category": "Makeup"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "17:30"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "17:30"
-    }
-  },
-  {
-    "id": "410454568",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "410454568",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:30"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:30"
-    }
-  },
-  {
-    "id": "788386765",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "788386765",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:30"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:30"
-    }
-  },
-  {
-    "id": "204929790",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "204929790",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:30"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:30"
-    }
-  },
-  {
-    "id": "957536894",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "957536894",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:30"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:30"
-    }
-  },
-  {
-    "id": "349189650",
-    "selectedService": {
-      "id": 3,
-      "name": "Cut and Style",
-      "description": "Custom haircut plus washing and styling.",
-      "category": "Hair"
+    {
+        "id": "349189650",
+        "selectedService": {
+            "id": 3,
+            "name": "Cut and Style",
+            "description": "Custom haircut plus washing and styling.",
+            "category": "Hair"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "09:00"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "09:00"
-    }
-  },
-  {
-    "id": "547531594",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "547531594",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "09:00"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "09:00"
-    }
-  },
-  {
-    "id": "432995434",
-    "selectedService": {
-      "id": 5,
-      "name": "Deep Tissue Massage",
-      "description": "Intense massage to alleviate muscle tension.",
-      "category": "Massage and Spa"
+    {
+        "id": "432995434",
+        "selectedService": {
+            "id": 5,
+            "name": "Deep Tissue Massage",
+            "description": "Intense massage to alleviate muscle tension.",
+            "category": "Massage and Spa"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "15:30"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "15:30"
-    }
-  },
-  {
-    "id": "375089656",
-    "selectedService": {
-      "id": 7,
-      "name": "Waxing",
-      "description": "Body waxing for smooth, hair-free skin.",
-      "category": "Hair Removal"
+    {
+        "id": "375089656",
+        "selectedService": {
+            "id": 7,
+            "name": "Waxing",
+            "description": "Body waxing for smooth, hair-free skin.",
+            "category": "Hair Removal"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "15:00"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "15:00"
-    }
-  },
-  {
-    "id": "825422726",
-    "selectedService": {
-      "id": 5,
-      "name": "Deep Tissue Massage",
-      "description": "Intense massage to alleviate muscle tension.",
-      "category": "Massage and Spa"
+    {
+        "id": "825422726",
+        "selectedService": {
+            "id": 5,
+            "name": "Deep Tissue Massage",
+            "description": "Intense massage to alleviate muscle tension.",
+            "category": "Massage and Spa"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "13:00"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "13:00"
-    }
-  },
-  {
-    "id": "547608756",
-    "selectedService": {
-      "id": 7,
-      "name": "Waxing",
-      "description": "Body waxing for smooth, hair-free skin.",
-      "category": "Hair Removal"
+    {
+        "id": "547608756",
+        "selectedService": {
+            "id": 7,
+            "name": "Waxing",
+            "description": "Body waxing for smooth, hair-free skin.",
+            "category": "Hair Removal"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "17:00"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "17:00"
-    }
-  },
-  {
-    "id": "495820853",
-    "selectedService": {
-      "id": 7,
-      "name": "Waxing",
-      "description": "Body waxing for smooth, hair-free skin.",
-      "category": "Hair Removal"
+    {
+        "id": "495820853",
+        "selectedService": {
+            "id": 7,
+            "name": "Waxing",
+            "description": "Body waxing for smooth, hair-free skin.",
+            "category": "Hair Removal"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "10:00"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "10:00"
-    }
-  },
-  {
-    "id": "888248965",
-    "selectedService": {
-      "id": 6,
-      "name": "Anti-Aging Facial",
-      "description": "Rejuvenating facial treatment with natural products.",
-      "category": "Facial Care"
+    {
+        "id": "888248965",
+        "selectedService": {
+            "id": 6,
+            "name": "Anti-Aging Facial",
+            "description": "Rejuvenating facial treatment with natural products.",
+            "category": "Facial Care"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:00"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:00"
-    }
-  },
-  {
-    "id": "892598086",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "892598086",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "24 de abril de 2024",
+            "timeSlot": "15:30"
+        }
     },
-    "selectedSlot": {
-      "date": "24 de abril de 2024",
-      "timeSlot": "15:30"
-    }
-  },
-  {
-    "id": "418386533",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "418386533",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "10:00"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "10:00"
-    }
-  },
-  {
-    "id": "968484485",
-    "selectedService": {
-      "id": 1,
-      "name": "Classic Manicure",
-      "description": "Includes filing, moisturizing, and permanent polish application.",
-      "category": "Hands and Feet"
+    {
+        "id": "968484485",
+        "selectedService": {
+            "id": 1,
+            "name": "Classic Manicure",
+            "description": "Includes filing, moisturizing, and permanent polish application.",
+            "category": "Hands and Feet"
+        },
+        "selectedSlot": {
+            "date": "27 de abril de 2024",
+            "timeSlot": "09:00"
+        }
     },
-    "selectedSlot": {
-      "date": "27 de abril de 2024",
-      "timeSlot": "09:00"
+    {
+        "id": "879501620",
+        "selectedService": {
+            "id": 2,
+            "name": "Service1",
+            "desciption": "service1",
+            "category": "example"
+        },
+        "selectedSlot": {
+            "date": "2024-04-07",
+            "timeSlot": "10:00"
+        }
     }
-  }
 ]

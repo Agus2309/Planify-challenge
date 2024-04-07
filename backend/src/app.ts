@@ -1,17 +1,22 @@
-import express from 'express';
-import routes from './routes';
-import cors from 'cors';
+import express from 'express'
+import routes from './routes'
+import cors from 'cors'
 
-const app = express();
+const app = express()
 
-app.use(cors());
-app.use(routes);
-app.use(express.json());
+app.use(cors())
+app.use(routes)
+app.use(express.json())
 
-export default app;
+export const startServer = (port: number) => {
+  return new Promise<void>((resolve, reject) => {
+    const server = app.listen(port, () => {
+      console.log(`Servidor Express escuchando en el puerto ${port}`)
+      resolve()
+    })
 
-const PORT = process.env.PORT || 3000;
+    server.on('error', reject)
+  })
+}
 
-app.listen(PORT, () => {
-  console.log(`Servidor Express escuchando en el puerto ${PORT}`);
-});
+export default app
