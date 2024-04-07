@@ -31,6 +31,22 @@ Este repositorio contiene la solución para el Challenge Desarrollador Junior de
 }
 ```
 
+## Herramientas Requeridas
+
+```bash
+{
+  "frontend": [
+     "Node.js >= 14.x",
+     "npm >= 7.x",
+  ],
+
+  "backend": [
+     "Node.js >= 14.x",
+     "npm >= 7.x",
+  ]
+}
+```
+
 ## Ejecución del Proyecto
 
 ### Frontend
@@ -58,18 +74,9 @@ npm start
 npx jest
 ```
 
-## Herramientas Requeridas
+## Deploys
 
-```bash
-{
-  "frontend": [
-     "Node.js >= 14.x",
-     "npm >= 7.x",
-  ],
+Se han realizado los deploys tanto para el frontend como para el backend, siendo:
 
-  "backend": [
-     "Node.js >= 14.x",
-     "npm >= 7.x",
-  ]
-}
-```
+* **Frontend:** [https://turnos-planifychallenge.vercel.app](https://turnos-planifychallenge.vercel.app)
+* **Backend**: [https://planify-challenge.onrender.com](https://planify-challenge.onrender.com)
